@@ -17,10 +17,11 @@
         --font-weight:bold:
 
 }
+
 .nav-item a{
     color: var(--main-color);
     font-family: var(--font-family) !important;
-    font: weight var(--font-weight) !important;
+    font-weight: var(--font-weight) !important;
 }
 button{
     padding:3px 15px;
@@ -135,17 +136,14 @@ input{
 }
 form{
     padding: 10px 10px;
+    background: url(../img/autumn-trees.jpg);
+    background-position: center;
+    background-size: cover;
 
 }
-.cards{
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    gap: 50px;
+.carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    height: calc(100vh - 30px);
+}
 
-}
-.card{
-    width: 600px;
-    height: 400px;
-    background-color: #2751cd;
-}
